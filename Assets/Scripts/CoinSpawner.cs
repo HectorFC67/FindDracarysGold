@@ -9,7 +9,6 @@ public class CoinSpawner : MonoBehaviour
 
     void Start()
     {
-        // Llamar al método SpawnCoin repetidamente cada spawnInterval segundos.
         InvokeRepeating("SpawnCoin", 0.0f, spawnInterval);
     }
 
