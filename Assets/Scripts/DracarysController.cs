@@ -5,9 +5,9 @@ using UnityEngine;
 public class DracarysController : MonoBehaviour
 {
     [SerializeField] private float speed;
-
     private FixedJoystick fixedJoystick;
     private Rigidbody rigidBody;
+    public Camera mainCamera;
 
     private void OnEnable()
     {
@@ -21,11 +21,11 @@ public class DracarysController : MonoBehaviour
         float zVal = fixedJoystick.Vertical;
 
         Vector3 movement = new Vector3(xVal, 0, zVal);
-        rigidBody.velocity= movement * speed;
-
-        if(xVal != 0 && zVal != 0)
+        rigidBody.velocity = movement * speed;
+        
+        if (xVal != 0 && zVal != 0)
         {
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(xVal, zVal)*Mathf.Rad2Deg, transform.eulerAngles.z);
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(xVal, zVal) * Mathf.Rad2Deg, transform.eulerAngles.z);
         }
     }
 }
