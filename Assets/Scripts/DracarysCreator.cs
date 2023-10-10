@@ -11,10 +11,12 @@ public class DracarysCreator : MonoBehaviour
 
     private GameObject dracarys;
     private ARTrackedImageManager aRTrackedImageManager;
+    private ARPlaneManager aRPlaneManager;
 
     private void OnEnable()
     {
         aRTrackedImageManager = gameObject.GetComponent<ARTrackedImageManager>();
+        aRPlaneManager = gameObject.GetComponent<ARPlaneManager>();
 
         aRTrackedImageManager.trackedImagesChanged += OnImageChanged;
     }
@@ -25,6 +27,10 @@ public class DracarysCreator : MonoBehaviour
         {
             dracarys = Instantiate(dracarysPrefab, image.transform);
             dracarys.transform.position += prefabOffset;
+
+            aRTrackedImageManager.enabled = false;
+
+            aRPlaneManager.enabled = true;
         }
     }
 }

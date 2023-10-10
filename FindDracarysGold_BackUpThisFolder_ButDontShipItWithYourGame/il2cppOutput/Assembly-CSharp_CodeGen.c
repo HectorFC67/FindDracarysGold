@@ -112,59 +112,91 @@ extern void VariableJoystick_OnPointerUp_m65296D82A6C2E1BDC2D622B9C922FAE8E45445
 extern void VariableJoystick_HandleInput_mD1BCF9A068737A9C057EE8CEB7E6DEB682CC03AB (void);
 // 0x00000032 System.Void VariableJoystick::.ctor()
 extern void VariableJoystick__ctor_m6C7B41973BE20A94F16DB5DCC9AA805C5D8DF852 (void);
-// 0x00000033 System.Void CoinSpawner::Start()
+// 0x00000033 System.Void CoinController::Start()
+extern void CoinController_Start_m38EB33B06EDEF5818291B37EDBD3AE52434AC36A (void);
+// 0x00000034 System.Void CoinController::OnTriggerEnter(UnityEngine.Collider)
+extern void CoinController_OnTriggerEnter_m5FBCE55F09EAD8E5F9D343B1BE5284EF44EEABB2 (void);
+// 0x00000035 System.Void CoinController::ReproducirSonido()
+extern void CoinController_ReproducirSonido_mD0A907B8950B0AA66AD82BA439A29693233330A0 (void);
+// 0x00000036 System.Void CoinController::.ctor()
+extern void CoinController__ctor_mFEFFAC115A8889862E9D89A1D46FF820918177A4 (void);
+// 0x00000037 System.Void CoinCounter::Start()
+extern void CoinCounter_Start_m8C883D8778623079BC6111F6B6164AE25632B826 (void);
+// 0x00000038 System.Void CoinCounter::Update()
+extern void CoinCounter_Update_mF766B2FFDF8C85B24D4E7EAA0E2FBF1187A874C2 (void);
+// 0x00000039 System.Void CoinCounter::SumarPuntos(System.Single)
+extern void CoinCounter_SumarPuntos_m7A5FF603A92915247C1DC0A71342B0D5D755FDA1 (void);
+// 0x0000003A System.Void CoinCounter::.ctor()
+extern void CoinCounter__ctor_mF364B53B19549EF95BA8599B56E445785BA4078B (void);
+// 0x0000003B System.Void CoinSpawner::Start()
 extern void CoinSpawner_Start_mEE1797C47A70F22F5BFA43582B2C0AF0638C40FF (void);
-// 0x00000034 System.Void CoinSpawner::SpawnCoin()
+// 0x0000003C System.Void CoinSpawner::SpawnCoin()
 extern void CoinSpawner_SpawnCoin_m874BAB7FD0727CA6920105370E551A759AB4D0BD (void);
-// 0x00000035 System.Void CoinSpawner::.ctor()
+// 0x0000003D System.Void CoinSpawner::.ctor()
 extern void CoinSpawner__ctor_m39F93A345A61936CC765CA55CE65D9FAD6E28E70 (void);
-// 0x00000036 System.Void DracarysController::OnEnable()
+// 0x0000003E System.Void DracarysController::OnEnable()
 extern void DracarysController_OnEnable_mA09F42A85B6BBCB71006D2391EC7C5433F84EF10 (void);
-// 0x00000037 System.Void DracarysController::FixedUpdate()
+// 0x0000003F System.Void DracarysController::FixedUpdate()
 extern void DracarysController_FixedUpdate_m2C2789FC8BF017BFF4B05E89F0CB9DC305056510 (void);
-// 0x00000038 System.Void DracarysController::.ctor()
+// 0x00000040 System.Void DracarysController::.ctor()
 extern void DracarysController__ctor_m3890EA26E392D52ED1D004E238CF7B7C7A2BDB63 (void);
-// 0x00000039 System.Void DracarysCreator::OnEnable()
+// 0x00000041 System.Void DracarysCreator::OnEnable()
 extern void DracarysCreator_OnEnable_m89DC1F89AD029D8368CE261E77966BD599E3AFBC (void);
-// 0x0000003A System.Void DracarysCreator::OnImageChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
+// 0x00000042 System.Void DracarysCreator::OnImageChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
 extern void DracarysCreator_OnImageChanged_mF5438B2226778AC6BFF7C0DFF6E6568A1B10D687 (void);
-// 0x0000003B System.Void DracarysCreator::.ctor()
+// 0x00000043 System.Void DracarysCreator::.ctor()
 extern void DracarysCreator__ctor_m797471FE71DF395903EDC154889F1D2190EB6E8C (void);
-// 0x0000003C System.Void GameManager::Start()
-extern void GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2 (void);
-// 0x0000003D System.Void GameManager::RecogerMoneda()
-extern void GameManager_RecogerMoneda_mEEDFE70E174BB1F715E73D09824AC7C33AD7DC24 (void);
-// 0x0000003E System.Void GameManager::ActualizarPuntuacion()
-extern void GameManager_ActualizarPuntuacion_m95D23B6D5EDC4DC3A0CFCB16CBE8393ACE3F8C74 (void);
-// 0x0000003F System.Void GameManager::OnTriggerEnter(UnityEngine.Collider)
-extern void GameManager_OnTriggerEnter_m5FCC2904598B632ABBCD47BD9AC503C37777BFDA (void);
-// 0x00000040 System.Void GameManager::.ctor()
-extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
-// 0x00000041 System.Void Menu::Start()
+// 0x00000044 System.Void GameOver::Start()
+extern void GameOver_Start_m69F2EA72A4C2B7A2292169AECAEE630860C57B89 (void);
+// 0x00000045 System.Void GameOver::RestartGame()
+extern void GameOver_RestartGame_mDE6B733B0065281E3472010899F71F259A6A6A8E (void);
+// 0x00000046 System.Void GameOver::ReturnToMainMenu()
+extern void GameOver_ReturnToMainMenu_m2302FADD54B7A3350A74D56FDF3D9C17158CC862 (void);
+// 0x00000047 System.Void GameOver::.ctor()
+extern void GameOver__ctor_m2D4239F9C4BCE2EBFD1D1D6FAFEBAD05F65399B2 (void);
+// 0x00000048 System.Void Menu::Start()
 extern void Menu_Start_mC49986718939F87924A1391044721CAC6E28919D (void);
-// 0x00000042 System.Void Menu::Exit()
+// 0x00000049 System.Void Menu::StartGame()
+extern void Menu_StartGame_m33557706120D85B9BA0ADDA44707411A175D4B74 (void);
+// 0x0000004A System.Void Menu::Exit()
 extern void Menu_Exit_mB3A4039FE6F2C3691206AA64A7962965187E26BD (void);
-// 0x00000043 System.Void Menu::.ctor()
+// 0x0000004B System.Void Menu::.ctor()
 extern void Menu__ctor_mBEF2B96BC9E3D64E020EBE40FEF9CF25E6C3ED00 (void);
-// 0x00000044 System.Single UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::get_featheringWidth()
+// 0x0000004C System.Void MusicBackgroundGame::Start()
+extern void MusicBackgroundGame_Start_mA3B2B3A6EB17B53A83A5230C6D90E095623E8102 (void);
+// 0x0000004D System.Void MusicBackgroundGame::.ctor()
+extern void MusicBackgroundGame__ctor_mE858D1D6F93DAA9DBB5EA8D67AE5868C08823C1D (void);
+// 0x0000004E System.Void Timer::Update()
+extern void Timer_Update_m3AC30EFD54E8E1010F6E601AE179212E71E6B2CD (void);
+// 0x0000004F System.Void Timer::.ctor()
+extern void Timer__ctor_m5FF13F1DAD0527F97E229A1904A8AD662731C4B5 (void);
+// 0x00000050 System.Void YouWin::Start()
+extern void YouWin_Start_mF62D5621822EA5FF4F4868CE283264582D10D848 (void);
+// 0x00000051 System.Void YouWin::RestartGame()
+extern void YouWin_RestartGame_mB3FF52A22B61845FC76EFBD8FCF2DAE8B91430D0 (void);
+// 0x00000052 System.Void YouWin::ReturnToMainMenu()
+extern void YouWin_ReturnToMainMenu_m703302736163DD031A93A23F8985B5EA158BA7F8 (void);
+// 0x00000053 System.Void YouWin::.ctor()
+extern void YouWin__ctor_m65560F8C6987976901328F73D487D4652A0813B9 (void);
+// 0x00000054 System.Single UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::get_featheringWidth()
 extern void ARFeatheredPlaneMeshVisualizer_get_featheringWidth_m2945B61548EEE9250BE692F8592A6176D8BA7A2A (void);
-// 0x00000045 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::set_featheringWidth(System.Single)
+// 0x00000055 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::set_featheringWidth(System.Single)
 extern void ARFeatheredPlaneMeshVisualizer_set_featheringWidth_mF695F727A4B05DB7F8236445865092203FDE5639 (void);
-// 0x00000046 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::Awake()
+// 0x00000056 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::Awake()
 extern void ARFeatheredPlaneMeshVisualizer_Awake_mAE8DB3C77C9418A1972DF38B0A9EB5EF978A41C1 (void);
-// 0x00000047 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::OnEnable()
+// 0x00000057 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::OnEnable()
 extern void ARFeatheredPlaneMeshVisualizer_OnEnable_mFDE5CAE08F9A2A5FD0B0CADACB35C90E1A8C9990 (void);
-// 0x00000048 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::OnDisable()
+// 0x00000058 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::OnDisable()
 extern void ARFeatheredPlaneMeshVisualizer_OnDisable_mEFB59B42F3EBD943D3DD11D07F489F13DFC715F9 (void);
-// 0x00000049 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::ARPlane_boundaryUpdated(UnityEngine.XR.ARFoundation.ARPlaneBoundaryChangedEventArgs)
+// 0x00000059 System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::ARPlane_boundaryUpdated(UnityEngine.XR.ARFoundation.ARPlaneBoundaryChangedEventArgs)
 extern void ARFeatheredPlaneMeshVisualizer_ARPlane_boundaryUpdated_m7D4228920DB050CA200942FB953F4727DB19E2BA (void);
-// 0x0000004A System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::GenerateBoundaryUVs(UnityEngine.Mesh)
+// 0x0000005A System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::GenerateBoundaryUVs(UnityEngine.Mesh)
 extern void ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mBE84E3CEBD2C9EF15B5F498FF4CDF7E1EF5DD205 (void);
-// 0x0000004B System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::.ctor()
+// 0x0000005B System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::.ctor()
 extern void ARFeatheredPlaneMeshVisualizer__ctor_m0553A1CAC9A932F42C3B0B8966F010964A2A3CAC (void);
-// 0x0000004C System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::.cctor()
+// 0x0000005C System.Void UnityEngine.XR.ARFoundation.Samples.ARFeatheredPlaneMeshVisualizer::.cctor()
 extern void ARFeatheredPlaneMeshVisualizer__cctor_m48377EA229FE49C0705EFED67F49E7A82CB5BD1A (void);
-static Il2CppMethodPointer s_methodPointers[76] = 
+static Il2CppMethodPointer s_methodPointers[92] = 
 {
 	JoystickPlayerExample_FixedUpdate_m9AEDBA111F95D67A006A5D3821956048224541B7,
 	JoystickPlayerExample__ctor_m702422E0AE29402330CF41FDDBEE76F0506342E2,
@@ -216,6 +248,14 @@ static Il2CppMethodPointer s_methodPointers[76] =
 	VariableJoystick_OnPointerUp_m65296D82A6C2E1BDC2D622B9C922FAE8E4544526,
 	VariableJoystick_HandleInput_mD1BCF9A068737A9C057EE8CEB7E6DEB682CC03AB,
 	VariableJoystick__ctor_m6C7B41973BE20A94F16DB5DCC9AA805C5D8DF852,
+	CoinController_Start_m38EB33B06EDEF5818291B37EDBD3AE52434AC36A,
+	CoinController_OnTriggerEnter_m5FBCE55F09EAD8E5F9D343B1BE5284EF44EEABB2,
+	CoinController_ReproducirSonido_mD0A907B8950B0AA66AD82BA439A29693233330A0,
+	CoinController__ctor_mFEFFAC115A8889862E9D89A1D46FF820918177A4,
+	CoinCounter_Start_m8C883D8778623079BC6111F6B6164AE25632B826,
+	CoinCounter_Update_mF766B2FFDF8C85B24D4E7EAA0E2FBF1187A874C2,
+	CoinCounter_SumarPuntos_m7A5FF603A92915247C1DC0A71342B0D5D755FDA1,
+	CoinCounter__ctor_mF364B53B19549EF95BA8599B56E445785BA4078B,
 	CoinSpawner_Start_mEE1797C47A70F22F5BFA43582B2C0AF0638C40FF,
 	CoinSpawner_SpawnCoin_m874BAB7FD0727CA6920105370E551A759AB4D0BD,
 	CoinSpawner__ctor_m39F93A345A61936CC765CA55CE65D9FAD6E28E70,
@@ -225,14 +265,22 @@ static Il2CppMethodPointer s_methodPointers[76] =
 	DracarysCreator_OnEnable_m89DC1F89AD029D8368CE261E77966BD599E3AFBC,
 	DracarysCreator_OnImageChanged_mF5438B2226778AC6BFF7C0DFF6E6568A1B10D687,
 	DracarysCreator__ctor_m797471FE71DF395903EDC154889F1D2190EB6E8C,
-	GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2,
-	GameManager_RecogerMoneda_mEEDFE70E174BB1F715E73D09824AC7C33AD7DC24,
-	GameManager_ActualizarPuntuacion_m95D23B6D5EDC4DC3A0CFCB16CBE8393ACE3F8C74,
-	GameManager_OnTriggerEnter_m5FCC2904598B632ABBCD47BD9AC503C37777BFDA,
-	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
+	GameOver_Start_m69F2EA72A4C2B7A2292169AECAEE630860C57B89,
+	GameOver_RestartGame_mDE6B733B0065281E3472010899F71F259A6A6A8E,
+	GameOver_ReturnToMainMenu_m2302FADD54B7A3350A74D56FDF3D9C17158CC862,
+	GameOver__ctor_m2D4239F9C4BCE2EBFD1D1D6FAFEBAD05F65399B2,
 	Menu_Start_mC49986718939F87924A1391044721CAC6E28919D,
+	Menu_StartGame_m33557706120D85B9BA0ADDA44707411A175D4B74,
 	Menu_Exit_mB3A4039FE6F2C3691206AA64A7962965187E26BD,
 	Menu__ctor_mBEF2B96BC9E3D64E020EBE40FEF9CF25E6C3ED00,
+	MusicBackgroundGame_Start_mA3B2B3A6EB17B53A83A5230C6D90E095623E8102,
+	MusicBackgroundGame__ctor_mE858D1D6F93DAA9DBB5EA8D67AE5868C08823C1D,
+	Timer_Update_m3AC30EFD54E8E1010F6E601AE179212E71E6B2CD,
+	Timer__ctor_m5FF13F1DAD0527F97E229A1904A8AD662731C4B5,
+	YouWin_Start_mF62D5621822EA5FF4F4868CE283264582D10D848,
+	YouWin_RestartGame_mB3FF52A22B61845FC76EFBD8FCF2DAE8B91430D0,
+	YouWin_ReturnToMainMenu_m703302736163DD031A93A23F8985B5EA158BA7F8,
+	YouWin__ctor_m65560F8C6987976901328F73D487D4652A0813B9,
 	ARFeatheredPlaneMeshVisualizer_get_featheringWidth_m2945B61548EEE9250BE692F8592A6176D8BA7A2A,
 	ARFeatheredPlaneMeshVisualizer_set_featheringWidth_mF695F727A4B05DB7F8236445865092203FDE5639,
 	ARFeatheredPlaneMeshVisualizer_Awake_mAE8DB3C77C9418A1972DF38B0A9EB5EF978A41C1,
@@ -243,7 +291,7 @@ static Il2CppMethodPointer s_methodPointers[76] =
 	ARFeatheredPlaneMeshVisualizer__ctor_m0553A1CAC9A932F42C3B0B8966F010964A2A3CAC,
 	ARFeatheredPlaneMeshVisualizer__cctor_m48377EA229FE49C0705EFED67F49E7A82CB5BD1A,
 };
-static const int32_t s_InvokerIndices[76] = 
+static const int32_t s_InvokerIndices[92] = 
 {
 	5451,
 	5451,
@@ -296,6 +344,14 @@ static const int32_t s_InvokerIndices[76] =
 	835,
 	5451,
 	5451,
+	4341,
+	5451,
+	5451,
+	5451,
+	5451,
+	4375,
+	5451,
+	5451,
 	5451,
 	5451,
 	5451,
@@ -307,7 +363,15 @@ static const int32_t s_InvokerIndices[76] =
 	5451,
 	5451,
 	5451,
-	4341,
+	5451,
+	5451,
+	5451,
+	5451,
+	5451,
+	5451,
+	5451,
+	5451,
+	5451,
 	5451,
 	5451,
 	5451,
@@ -320,13 +384,13 @@ static const int32_t s_InvokerIndices[76] =
 	4228,
 	4341,
 	5451,
-	8564,
+	8567,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	76,
+	92,
 	s_methodPointers,
 	0,
 	NULL,

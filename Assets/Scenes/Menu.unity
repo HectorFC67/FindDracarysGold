@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2789, y: 825}
+  m_AnchoredPosition: {x: 3022, y: 1435}
   m_SizeDelta: {x: 5000, y: 1500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &44027112
@@ -181,7 +181,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You have a joystick to control this grandious dragon called Dracarys. You
+  m_text: If you want to start the game, first of all, you have to scan the card
+    of Dracarys. You have two joystick to control this grandious dragon called Dracarys.
+    The joystick of the left will help you moving Dracarys around the map and which
+    is at the right of the screen, will help you changins the dragons altitude. You
     have to help it collecting the lost gold of Dracarys, if you can't collect it
     in 1 minute, Dracarys will be very angry and you will be dragon food.
   m_isRightToLeft: 0
@@ -217,7 +220,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 16
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -246,7 +249,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -758.23413, y: 0, z: -193.38062, w: -1863.966}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -374,7 +377,7 @@ GameObject:
   - component: {fileID: 826585713}
   - component: {fileID: 826585712}
   m_Layer: 5
-  m_Name: OptionsMenu
+  m_Name: InstructionsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -389,7 +392,7 @@ RectTransform:
   m_GameObject: {fileID: 826585710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.09824368, y: 0.08395551, z: 0.073166795}
+  m_LocalScale: {x: 0.10686948, y: 0.08395551, z: 0.073166795}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1585101322}
@@ -400,7 +403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 537, y: 257}
+  m_AnchoredPosition: {x: 621, y: 244}
   m_SizeDelta: {x: 12000, y: 6556.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826585712
@@ -563,7 +566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3677.5, y: -1472.5}
+  m_AnchoredPosition: {x: 3498, y: -351}
   m_SizeDelta: {x: 2500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &978159207
@@ -672,6 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b5e69a8df8b234eba79ad9f767c252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 0}
 --- !u!1 &988957380
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,8 +761,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 500
-  m_fontSizeBase: 500
+  m_fontSize: 400
+  m_fontSizeBase: 400
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -807,6 +811,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988957380}
   m_CullTransparentMesh: 1
+--- !u!1 &1039235273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039235275}
+  - component: {fileID: 1039235274}
+  m_Layer: 0
+  m_Name: MusicBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1039235274
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039235273}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9ea6e4a6d1b832742979e2ef2c4ce0b5, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 199
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1039235275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039235273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 823.1018, y: 307.4111, z: -2.3571167}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1237657546
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,7 +952,7 @@ GameObject:
   - component: {fileID: 1237657549}
   - component: {fileID: 1237657548}
   m_Layer: 5
-  m_Name: Controls
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -844,7 +976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3677.5, y: -471}
+  m_AnchoredPosition: {x: 3486.0002, y: 465.00012}
   m_SizeDelta: {x: 2500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1237657548
@@ -980,7 +1112,7 @@ RectTransform:
   m_GameObject: {fileID: 1285771586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.09913421, y: 0.0849766, z: 0.10193396}
+  m_LocalScale: {x: 0.10662875, y: 0.0849766, z: 0.10193396}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1683988778}
@@ -992,7 +1124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 537, y: 258}
+  m_AnchoredPosition: {x: 614, y: 235}
   m_SizeDelta: {x: 12000, y: 6556.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1285771588
@@ -1070,7 +1202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2659, y: -1754}
+  m_AnchoredPosition: {x: 2320, y: -1754}
   m_SizeDelta: {x: 2500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1529612559
@@ -1214,7 +1346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2951, y: 1513}
+  m_AnchoredPosition: {x: 2821, y: 1513}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1585101323
@@ -1237,7 +1369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Controls
+  m_text: Instructions
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -1443,7 +1575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3914.5, y: 1871.5}
+  m_AnchoredPosition: {x: 636, y: 1441}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1683988779
@@ -1581,7 +1713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3677.5, y: 433.5}
+  m_AnchoredPosition: {x: 3495.0002, y: 1276.0001}
   m_SizeDelta: {x: 2500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1817873747
@@ -1630,7 +1762,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1817873750}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Start
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1690,6 +1822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b5e69a8df8b234eba79ad9f767c252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 0}
 --- !u!1 &1863597394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +1949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Controls
+  m_text: Instructions
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1843,8 +1976,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 500
-  m_fontSizeBase: 500
+  m_fontSize: 400
+  m_fontSizeBase: 400
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1879,7 +2012,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 39.883423, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1978,8 +2111,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 500
-  m_fontSizeBase: 500
+  m_fontSize: 400
+  m_fontSizeBase: 400
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
